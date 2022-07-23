@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix"
+    "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -18,16 +19,24 @@
     "@vitejs/plugin-vue": "^3.0.0",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.2.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
-    "vue-tsc": "^0.38.4",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.7.1"
-  }
+    "vue-tsc": "^0.38.4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,tsx,ts}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+ }
 }
