@@ -7,7 +7,10 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -31,6 +34,8 @@
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vitepress": "^1.0.0-alpha.4",
+    "vitepress-theme-demoblock": "^1.4.2",
     "vue-tsc": "^0.38.4"
   },
   "lint-staged": {
@@ -38,5 +43,5 @@
       "npm run lint:fix",
       "git add"
     ]
- }
+  }
 }
