@@ -1,0 +1,30 @@
+@import '@/styles/variable.scss';
+
+// 按钮类型的配置
+$button-type: (
+  primary: (
+    color: $tt-button-primary-font-color,
+    border-color: $tt-button-primary-border-color,
+    background-color: $tt-button-primary-background-color
+  ),
+  success: (
+    color: $tt-button-success-font-color,
+    border-color: $tt-button-primary-border-color,
+    background-color: $tt-button-primary-background-color
+  ),
+  warning: (
+    color: $tt-button-warning-font-color,
+    border-color: $tt-button-warning-border-color,
+    background-color: $tt-button-warning-background-color
+  ),
+  danger: (
+    color: $tt-button-danger-font-color,
+    border-color: $tt-button-danger-border-color,
+    background-color: $tt-button-danger-background-color
+  ),
+  info: (
+    color: $tt-button-info-font-color,
+    border-color: $tt-button-info-border-color,
+    background-color: $tt-button-info-background-color
+  )
+);

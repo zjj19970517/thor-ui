@@ -1,0 +1,8 @@
+@import './button-config.scss';
+@import './button-base.scss';
+
+.tt-btn {
+  @include button-base;
+  // 导入 type 相关的样式
+  @include button-variant($button-type);
+}

@@ -1,0 +1,9 @@
+// getCssVar('--tt-button-text-color') => var(--tt-button-text-color)
+@function getCssVar($varName) {
+  @return var(#{$varName});
+}
+
+// getCssVarWithDefault('--tt-button-text-color', red) => var(--tt-button-text-color, red)
+@function getCssVarWithDefault($varName, $default) {
+  @return var(#{$varName}, #{$default});
+}
