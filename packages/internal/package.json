@@ -1,0 +1,19 @@
+{
+  "name": "@thor-ui/internal",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "pnpm run stub",
+    "stub": "unbuild --stub"
+  },
+  "devDependencies": {
+    "unbuild": "^0.7.4"
+  },
+  "dependencies": {
+    "@pnpm/types": "^8.4.0"
+  }
+}

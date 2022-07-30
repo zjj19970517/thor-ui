@@ -17,4 +17,4 @@ module.exports = {
   // htmlWhitespaceSensitivity: 'css',
   // vueIndentScriptAndStyle: false,  // .vue 缩进
   endOfLine: 'auto' // default lf
-}
+};

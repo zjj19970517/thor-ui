@@ -1,0 +1,11 @@
+{
+    "name": "thor-ui",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "peerDependencies": {
+        "vue": "^3.2.37"
+    }
+}

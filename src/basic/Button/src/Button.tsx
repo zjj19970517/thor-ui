@@ -1,10 +1,9 @@
 import { defineComponent, toRefs } from 'vue';
 
-import { Prefix } from '@config/web';
 import { buttonProps, ButtonProps } from './button-type';
 
 export default defineComponent({
-  name: Prefix + 'Button',
+  name: 'TT' + 'Button',
   props: buttonProps,
   setup(props: ButtonProps, { slots }) {
     const { type } = toRefs(props);
