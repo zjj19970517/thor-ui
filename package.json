@@ -13,6 +13,8 @@
     "build:lib": "pnpm run -C packages/build start"
   },
   "dependencies": {
+    "@vue/shared": "^3.2.37",
+    "@vueuse/core": "^9.1.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {

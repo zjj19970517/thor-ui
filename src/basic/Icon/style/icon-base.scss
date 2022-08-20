@@ -1,0 +1,9 @@
+@import '@/styles/variable.scss';
+
+@mixin icon-base {
+  @apply inline-flex items-center justify-center;
+
+  @apply h-[1em] w-[1em] leading-[1em] relative fill-current;
+
+  color: var(--color);
+}
