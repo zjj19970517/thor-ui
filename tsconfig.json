@@ -12,12 +12,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "types": ["vitest/globals"],
-    "paths": {
-      "@/*": ["./src/*"],
-      "@config/*": ["./config/*"],
-      "@docs/*": ["./docs/*"]
-    }
+    "types": ["vitest/globals"]
   },
   "include": [
     "src/**/*.ts",

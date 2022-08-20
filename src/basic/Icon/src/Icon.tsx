@@ -3,9 +3,9 @@ import type { StyleValue } from 'vue';
 
 import { iconProps, IconProps } from './icon-type';
 import { Prefix } from '../../../common/constants';
-import { useNamespace } from '@/hooks';
-import { isUndefined } from '@/utils/type';
-import { addUnit } from '@/utils/dom';
+import { useNamespace } from '../../../hooks';
+import { isUndefined } from '../../../utils/type';
+import { addUnit } from '../../../utils/dom';
 
 export default defineComponent({
   name: Prefix + 'Icon',

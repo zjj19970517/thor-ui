@@ -1,4 +1,4 @@
-import { ComponentWithInstall } from '@/types/components';
+import { ComponentWithInstall } from '../types/components';
 import type { App } from 'vue';
 
 export const withInstall = <T>(main: T) => {
