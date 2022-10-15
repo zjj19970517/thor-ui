@@ -1,0 +1,16 @@
+@import '@/styles/variable.scss';
+
+@mixin checkbox-base {
+  // 布局属性
+  @apply inline-flex items-center;
+
+  // 元素属性
+  @apply border-none h-[32px] mr-[30px] bg-transparent;
+
+  // 文本属性
+  @apply outline-0 leading-normal whitespace-nowrap
+     cursor-pointer select-none;
+
+  // 文字样式
+  font-size: $--font-size-base;
+}

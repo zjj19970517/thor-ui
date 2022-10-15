@@ -1,0 +1,24 @@
+// BEM
+@mixin b($block) {
+  $B: $namespace + '-' + $block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+
+@mixin e($B, $element) {
+  $E: $B + '__' + $element !global;
+
+  #{$E} {
+    @content;
+  }
+}
+
+@mixin m($P, $modifier) {
+  $M: $P + '--' + $modifier !global;
+
+  #{$M} {
+    @content;
+  }
+}

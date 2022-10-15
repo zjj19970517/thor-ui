@@ -1,4 +1,4 @@
-import { buildModules } from './build-mdules';
+import { buildModules } from './build-modules';
 
 const runBuild = () => {
   // TODO: clean dist

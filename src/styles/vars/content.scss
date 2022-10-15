@@ -1,0 +1,113 @@
+/* Colors */
+$tt-color-primary: getCssVarWithDefault(
+  '--tt-color-primary',
+  $--color-primary
+) !default;
+
+$tt-color-white: getCssVarWithDefault(
+  '--tt-color-white',
+  $--color-white
+) !default;
+
+$tt-color-black: getCssVarWithDefault(
+  '--tt-color-black',
+  $--color-black
+) !default;
+
+$tt-color-success: getCssVarWithDefault(
+  '--tt-color-success',
+  $--color-success
+) !default;
+
+$tt-color-warning: getCssVarWithDefault(
+  '--tt-color-warning',
+  $--color-warning
+) !default;
+
+$tt-color-danger: getCssVarWithDefault(
+  '--tt-color-danger',
+  $--color-danger
+) !default;
+
+$tt-color-info: getCssVarWithDefault('--tt-color-info', $--color-info) !default;
+
+/* Primary Light */
+$tt-color-primary-light-1: getCssVarWithDefault(
+  '--tt-color-primary-light-1',
+  mix($--color-white, $--color-primary, 10%)
+) !default;
+
+$tt-color-primary-light-2: getCssVarWithDefault(
+  '--tt-color-primary-light-2',
+  mix($--color-white, $--color-primary, 20%)
+) !default;
+
+$tt-color-primary-light-3: getCssVarWithDefault(
+  '--tt-color-primary-light-3',
+  mix($--color-white, $--color-primary, 30%)
+) !default;
+
+$tt-color-primary-light-4: getCssVarWithDefault(
+  '--tt-color-primary-light-4',
+  mix($--color-white, $--color-primary, 40%)
+) !default;
+
+$tt-color-primary-light-5: getCssVarWithDefault(
+  '--tt-color-primary-light-5',
+  mix($--color-white, $--color-primary, 50%)
+) !default;
+
+/* BorderColor */
+$tt-border-color: getCssVarWithDefault(
+  '--tt-border-color',
+  $--border-color
+) !default;
+
+$tt-border-color-light: getCssVarWithDefault(
+  '--tt-border-color-light',
+  $--border-color-light
+) !default;
+
+$tt-border-color-lighter: getCssVarWithDefault(
+  '--tt-border-color-lighter',
+  $--border-color-lighter
+) !default;
+
+$tt-border-color-extra-light: getCssVarWithDefault(
+  '--tt-border-color-extra-light',
+  $--border-color-extra-light
+) !default;
+
+$tt-border-color-dark: getCssVarWithDefault(
+  '--tt-border-color-dark',
+  $--border-color-dark
+) !default;
+
+$tt-border-color-darker: getCssVarWithDefault(
+  '--tt-border-color-darker',
+  $--border-color-darker
+) !default;
+
+/* Button */
+$tt-button-primary-border-color: $tt-color-primary !default;
+$tt-button-primary-font-color: $tt-color-white !default;
+$tt-button-primary-background-color: $tt-color-primary !default;
+
+$tt-button-success-border-color: $tt-color-success !default;
+$tt-button-success-font-color: $tt-color-white !default;
+$tt-button-success-background-color: $tt-color-success !default;
+
+$tt-button-warning-border-color: $tt-color-warning !default;
+$tt-button-warning-font-color: $tt-color-white !default;
+$tt-button-warning-background-color: $tt-color-warning !default;
+
+$tt-button-danger-border-color: $tt-color-danger !default;
+$tt-button-danger-font-color: $tt-color-white !default;
+$tt-button-danger-background-color: $tt-color-danger !default;
+
+$tt-button-info-border-color: $tt-color-info !default;
+$tt-button-info-font-color: $tt-color-white !default;
+$tt-button-info-background-color: $tt-color-info !default;
+
+/* Checkbox */
+$tt-checkbox-input-border: $tt-border-color;

@@ -1,0 +1,87 @@
+/**
+ * 公共 sass 变量
+** /
+
+/* Transition */
+// 线性
+$--transition-timing-function-linear: cubic-bezier(0, 0, 1, 1) !default;
+// 标准
+$--transition-timing-function-standard: cubic-bezier(
+  0.34,
+  0.69,
+  0.1,
+  1
+) !default;
+// 过冲
+$--transition-timing-function-overshoot: cubic-bezier(
+  0.3,
+  1.3,
+  0.3,
+  1
+) !default;
+// 减速
+$--transition-timing-function-decelerate: cubic-bezier(
+  0.4,
+  0.8,
+  0.74,
+  1
+) !default;
+// 加速
+$--transition-timing-function-accelerate: cubic-bezier(
+  0.26,
+  0,
+  0.6,
+  0.2
+) !default;
+
+/* Animation */
+$--animation-duration-slow: 300ms;
+$--animation-ease-in-out-smooth: cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+
+/* Color */
+$--color-primary: #409eff !default;
+$--color-white: #ffffff !default;
+$--color-black: #000000 !default;
+$--color-success: #67c23a !default;
+$--color-danger: #f56c6c !default;
+$--color-warning: #e6a23c !default;
+$--color-info: #909399 !default;
+
+/* TextColor */
+$--color-text-primary: #303133 !default;
+$--color-text-regular: #606266 !default;
+$--color-text-secondary: #909399 !default;
+$--color-text-placeholder: #c0c4cc !default;
+
+/* BorderColor */
+$--border-color-base: #dcdfe6 !default;
+$--border-color-light: #e4e7ed !default;
+$--border-color-lighter: #ebeef5 !default;
+$--border-color-extra-light: #f2f6fc !default;
+
+/* Percent */
+$--button-hover-tint-percent: 20% !default;
+$--button-active-shade-percent: 10% !default;
+
+/* FontSize */
+$--font-size-base: 14px !default;
+$--font-size-medium: 16px !default;
+$--font-size-large: 18px !default;
+$--font-size-20: 20px !default;
+$--font-size-24: 24px !default;
+$--font-size-32: 32px !default;
+
+/* BorderRadius */
+$--border-radius-small: 2px !default;
+$--border-radius-base: 4px !default;
+$--border-radius-half: 50% !default;
+$--border-radius-circle: 100% !default;
+$--border-radius-zero: 0 !default;
+
+/* BorderColor */
+$--border-color: #dcdfe6;
+$--border-color-light: #e4e7ed;
+$--border-color-lighter: #ebeef5;
+$--border-color-extra-light: #f2f6fc;
+$--border-color-dark: #d4d7de;
+$--border-color-darker: #cdd0d6;

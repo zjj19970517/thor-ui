@@ -7,7 +7,13 @@ const sidebar = {
       text: 'Basic 基础组件',
       items: [
         { text: 'Button 按钮', link: '/components/basic/button/index' },
-        { text: 'Icon 图标', link: '/components/basic/icon/index' },
+        { text: 'Icon 图标', link: '/components/basic/icon/index' }
+      ]
+    },
+    {
+      text: 'Form 表单组件',
+      items: [
+        { text: 'Checkbox 多选', link: '/components/basic/checkbox/index' }
       ]
     }
   ]

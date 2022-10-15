@@ -1,0 +1,41 @@
+@import './checkbox-base.scss';
+
+$root: $namespace + '-checkbox';
+
+@include b(checkbox) {
+  @include checkbox-base;
+
+  @include e(&, label) {
+    @apply inline-block;
+    @apply pl-[8px] leading-[1];
+  }
+
+  @include e(&, input) {
+    @apply inline-flex relative;
+    @apply whitespace-nowrap cursor-pointer outline-none;
+  }
+
+  @include e(&, inner) {
+    display: inline-block;
+    position: relative;
+    border: 1px solid $tt-checkbox-input-border;
+    border-radius: 2px;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    transition: border-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46),
+      background-color 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46),
+      outline 0.25s cubic-bezier(0.71, -0.46, 0.29, 1.46);
+  }
+
+  @include e(&, original) {
+    opacity: 0;
+    outline: none;
+    position: absolute;
+    margin: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+  }
+}
