@@ -3,6 +3,7 @@ import type { App } from 'vue';
 import 'vitepress-theme-demoblock/theme/styles/index.css';
 
 import { registerDemoComponents } from './register-components';
+
 import ThorUi from '../../../src/default';
 import '../../../src/styles/index.scss';
 
