@@ -1,6 +1,22 @@
-# Thor UI
+<br>
 
-基于 Vue3 的组件库。
+<p align="center">
+  <img src="https://github.com/smarty-team/smarty-admin/blob/main/assets/logo.jpeg" style="width:200px;" />
+</p>
+
+<h1 align="center">Thor UI</h1>
+
+<p align="center">
+基于 Vue3 的组件库
+</p>
+
+<p align="center">
+    <a href="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml"><img src="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml/badge.svg?branch=master" alt="CI" style="max-width: 100%;"></a>
+</p>
+
+<br>
+<br>
+
 
 ## Usage
 
