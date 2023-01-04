@@ -10,7 +10,8 @@
     "docs:serve": "vitepress serve docs",
     "test": "vitest",
     "stub": "pnpm run -r --parallel stub",
-    "build:lib": "pnpm run -C packages/build start"
+    "build:lib": "pnpm run -C packages/build start",
+    "docs:deploy": "bash deploy.sh"
   },
   "dependencies": {
     "@vue/shared": "^3.2.37",

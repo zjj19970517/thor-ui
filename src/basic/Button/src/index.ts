@@ -8,5 +8,3 @@ export const TTButton = {
 };
 
 export default TTButton;
-
-export * from './Button';

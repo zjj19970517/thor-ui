@@ -8,7 +8,3 @@ export const TTCheckbox = {
 };
 
 export default TTCheckbox;
-
-export * from './Checkbox';
-
-export * from './types';
