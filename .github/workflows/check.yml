@@ -1,0 +1,33 @@
+# workflow name
+name: check
+on:
+  # master 分支 push 或 pull_request 的时候触发
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  # 任务一：lint 校验
+  lint:
+    # 指定运行环境
+    runs-on: ubuntu-latest
+    # 任务的步骤
+    steps:
+      # 第一步: 运行第三方 Action 脚本，将我们的代码 checkout 下来
+      - uses: actions/checkout@v2
+      # 第二步：安装 pnpm 软件
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          # 指定版本
+          version: 7.2.1
+      # 第三步：安装依赖
+      - name: Install modules
+        run: pnpm install
+      # 第四步：运行 lint script
+      - name: Run Lint
+        run: pnpm run lint
+        
+  # 任务二：lint 校验     
+  # UnitTest:
+  
+  
