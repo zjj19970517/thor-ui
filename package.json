@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix",
+    "lint": "eslint './src/**/*.{js,jsx,tsx,ts,vue}'",
     "prepare": "husky install",
     "dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
