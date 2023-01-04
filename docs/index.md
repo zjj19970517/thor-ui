@@ -2,19 +2,18 @@
 layout: home
 
 hero:
-  name: 主标题
-  text: 内容信息
-  tagline: 副内容信息
+  name: Thor UI
+  tagline: 基于 Vue 3，面向前端开发者的组件库
   image:
     src: /images/web.png
-    alt: 网站的 logo 图片
+    alt: Thor UI logo
   actions:
     - theme: brand
       text: 快速开始
       link: /guide/quick
     - theme: alt
       text: 在 github 上查看
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/zjj19970517/thor-ui
 features:
   - icon: ⚡️
     title: 这里是功能区 1
