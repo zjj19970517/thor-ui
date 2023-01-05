@@ -15,7 +15,8 @@
     "docs:deploy": "bash deploy.sh",
     "postversion": "bash ./scripts/publish.sh && git push --follow-tags",
     "clean:dist": "rimraf dist",
-    "clean": "pnpm run clean:dist"
+    "clean": "pnpm run clean:dist",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vue/shared": "^3.2.37",
@@ -34,7 +35,9 @@
     "@typescript-eslint/parser": "^5.30.7",
     "@vitejs/plugin-vue": "^3.0.0",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "@vitest/coverage-istanbul": "^0.26.3",
     "autoprefixer": "^10.4.7",
+    "c8": "^7.12.0",
     "chalk": "^5.0.1",
     "consola": "^2.15.3",
     "conventional-changelog-cli": "^2.2.2",
@@ -49,6 +52,7 @@
     "fast-glob": "^3.2.11",
     "happy-dom": "^6.0.4",
     "husky": "^8.0.1",
+    "istanbul": "^0.4.5",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
@@ -61,7 +65,7 @@
     "vite": "^3.0.0",
     "vitepress": "^1.0.0-alpha.4",
     "vitepress-theme-demoblock": "^1.4.2",
-    "vitest": "^0.18.1",
+    "vitest": "^0.26.3",
     "vue-tsc": "^0.38.4"
   },
   "lint-staged": {

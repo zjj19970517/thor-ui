@@ -14,6 +14,11 @@ export default defineConfig({
     // 支持 tsx 组件
     transformMode: {
       web: [/.[tj]sx$/]
+    },
+    coverage: {
+      // @ts-ignore
+      provider: 'istanbul',
+      reporter: ['text', 'json', 'html']
     }
   }
 });
