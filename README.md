@@ -11,7 +11,12 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml"><img src="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml/badge.svg?branch=master" alt="CI" style="max-width: 100%;"></a>
+    <a href="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml">
+      <img src="https://github.com/zjj19970517/thor-ui/actions/workflows/check.yml/badge.svg?branch=master" alt="CI" style="max-width: 100%;">
+    </a>
+    <a href="https://codecov.io/gh/zjj19970517/thor-ui" > 
+      <img src="https://codecov.io/gh/zjj19970517/thor-ui/branch/master/graph/badge.svg?token=9X81UQYJUE"/> 
+    </a>
 </p>
 
 <br>
