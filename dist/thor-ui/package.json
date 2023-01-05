@@ -8,9 +8,7 @@
     "vue"
   ],
   "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "module": "es/index.mjs",
   "peerDependencies": {
     "vue": "^3.2.37"
   }

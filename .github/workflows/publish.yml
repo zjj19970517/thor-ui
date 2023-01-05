@@ -1,0 +1,40 @@
+# name，也就是当前 workflow 的名称
+name: publish
+
+# tag 变更时触发
+on:
+  push:
+    tags:
+      - 'v*'
+
+# jobs 也就是任务的意思
+jobs:
+  publish:
+    # name: 在 Github 中显示的 job 名称
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+      # name:  当前 step 的名字
+      - name: Checkout    # 获取分支的代码和提交记录
+        uses: actions/checkout@v2
+
+      - uses: pnpm/action-setup@v2.1.0
+        with:
+          # 指定版本
+          version: 7.2.1
+
+      - name: Install modules
+        run: pnpm install
+
+      - name: Build
+        run: pnpm run build:lib # 打包
+
+      - name: cd
+        run: cd ./dist/thor-ui
+
+      - name: Publish to NPM  # 推送到 NPM 上
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

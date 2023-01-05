@@ -12,7 +12,10 @@
     "test": "vitest",
     "stub": "pnpm run -r --parallel stub",
     "build:lib": "pnpm run -C packages/build start",
-    "docs:deploy": "bash deploy.sh"
+    "docs:deploy": "bash deploy.sh",
+    "postversion": "bash ./scripts/publish.sh && git push --follow-tags",
+    "clean:dist": "rimraf dist",
+    "clean": "pnpm run clean:dist"
   },
   "dependencies": {
     "@vue/shared": "^3.2.37",
@@ -34,6 +37,7 @@
     "autoprefixer": "^10.4.7",
     "chalk": "^5.0.1",
     "consola": "^2.15.3",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
@@ -48,6 +52,7 @@
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "rollup-plugin-esbuild": "^4.9.1",
     "sass": "^1.54.0",
     "tailwindcss": "^3.1.6",

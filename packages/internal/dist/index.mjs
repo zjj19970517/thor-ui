@@ -1,2 +1,2 @@
-import jiti from "file:///Users/zhangjinjie/workspace/meils/fe-framework/thor-ui/node_modules/.pnpm/jiti@1.14.0/node_modules/jiti/lib/index.js";
-export default jiti(null, { interopDefault: true })('/Users/zhangjinjie/workspace/meils/fe-framework/thor-ui/packages/internal/src/index');
+import jiti from "file:///Users/apple/luoji/fe-framework/thor-ui/node_modules/.pnpm/jiti@1.14.0/node_modules/jiti/lib/index.js";
+export default jiti(null, { interopDefault: true })('/Users/apple/luoji/fe-framework/thor-ui/packages/internal/src/index');
