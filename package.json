@@ -1,7 +1,6 @@
 {
   "name": "thor-ui",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix",
     "lint": "eslint './src/**/*.{js,jsx,tsx,ts,vue}'",
@@ -13,7 +12,8 @@
     "stub": "pnpm run -r --parallel stub",
     "build:lib": "pnpm run -C packages/build start",
     "docs:deploy": "bash deploy.sh",
-    "postversion": "bash ./scripts/publish.sh && git push --follow-tags",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "echo 'exec' && bash ./scripts/publish.sh && git push --follow-tags",
     "clean:dist": "rimraf dist",
     "clean": "pnpm run clean:dist",
     "coverage": "vitest run --coverage"
