@@ -1,6 +1,6 @@
 {
   "name": "thor-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "lint:fix": "eslint './src/**/*.{js,jsx,tsx,ts,vue}' --fix",
     "lint": "eslint './src/**/*.{js,jsx,tsx,ts,vue}'",
